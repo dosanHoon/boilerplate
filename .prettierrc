@@ -1,0 +1,15 @@
+{
+    "bracketSpacing": true,
+    "tabWidth": 4,
+    "useTabs": false,
+    "overrides": [
+        {
+            "files": "*.js,*.jsx,*.html",
+            "options": {
+                "semi": true,
+                "jsxSingleQuote": false,
+                "trailingComma": "es5"
+            }
+        }
+    ]
+}

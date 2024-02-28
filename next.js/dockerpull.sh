@@ -14,4 +14,4 @@ docker pull
     echo "Failed docker pull"
     exit 1
   fi
-docker run -d -p 3000:3000
+docker run -d -p 3000:3000 -v /workspace/logs:/app/logs 

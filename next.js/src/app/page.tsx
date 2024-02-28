@@ -1,3 +1,8 @@
+import { logger } from "@/lib/logger";
+
 export default function Home() {
-    return <main></main>;
+  logger.info({
+    message: "Hello, world!",
+  });
+  return <main></main>;
 }

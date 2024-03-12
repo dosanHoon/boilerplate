@@ -18,3 +18,11 @@ export function formatDateString(dateString: string): string {
   // 포맷에 맞춰 문자열로 결합
   return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
 }
+
+export function getTodayString(): string {
+  const today = new Date();
+  const year = today.getFullYear();
+  const month = String(today.getMonth() + 1).padStart(2, "0");
+  const day = String(today.getDate()).padStart(2, "0");
+  return `${year}${month}${day}`;
+}

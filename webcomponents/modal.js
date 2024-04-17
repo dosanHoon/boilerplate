@@ -51,7 +51,9 @@ class Modal extends HTMLElement {
   }
 
   render() {
-    this.shadowRoot.innerHTML = html` <style>
+    this.shadowRoot.innerHTML = html` 
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+    <style>
       #btn-close {
       }
       #modal-dialog {
